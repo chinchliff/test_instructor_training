@@ -1,19 +1,18 @@
 ---
 layout: workshop
 root: .
-venue: Some University
-address: 456 Main St #123 Somewhere, SW
-country: Some-Country
-latlng: 12.34, -56.78
-humandate: Jan 02-03, 2015
-humantime: 9:00 am - 4:30 pm
-startdate: 2015-01-02
-enddate: 2015-01-03
-instructor: ["A Nice Human", "Some Human", "Another Nice-Human"]
-helper: ["More NicePeople", "Smart Human"]
-contact: someone@somewhere.org
-etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
-eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
+venue: University of Michigan
+address: 2071A Kraus Natural Science Building, Ann Arbor, MI #123 Somewhere, SW
+country: USA
+latlng: 42.278348, -83.738762
+humandate: Dec 02, 2014
+humantime: 4:00 pm - 4:05 pm
+startdate: 2014-12-02
+enddate: 2014-12-02
+instructor: ["Cody Hinchliff",] #, "Some Human", "Another Nice-Human"]
+helper: [] # ["More NicePeople", "Smart Human"]
+contact: hinchlif@umich.edu
+etherpad: http://etherpad.mozilla.org/swc-teaching-11 # (insert the URL for your Etherpad if you're using one)
 ---
 <!--
   Edit the values in the block above to be appropriate for your
@@ -47,11 +46,9 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
   is to help scientists and engineers get more research done in less
   time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
-  concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
-  help one another and to apply what they have learned to their own
-  research problems.
+  scientific computing.  This 5 minute example workshop is being offered
+  as part of the Software Carpentry instructor training course and will
+  focus on basic program design in Python.
 </p>
 
 <!--
@@ -60,7 +57,8 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  The example course will be presented to other participants and instructors in
+  round 11 of the instructor training course.
 </p>
 
 <!--
@@ -120,23 +118,8 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   <div class="span6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-    </table>
-  </div>
-  <div class="span6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>16:00</td>  <td>Building programs with Python</td> </tr>
+      <tr> <td>16:05</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
 </div>
@@ -180,27 +163,9 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 
 <div class="row-fluid">
   <div class="span6">
-    <h3>The Unix Shell</h3>
-    <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="span6">
     <h3>Programming in Python</h3>
     <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
       <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
       <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
     </ul>
   </div>
@@ -217,37 +182,6 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     </ul>
   </div>
   -->
-</div>
-
-<div class="row-fluid">
-  <div class="span6">
-    <h3>Version Control with Git</h3>
-    <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="span6">
-    <h3>Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Reference...</a></li>
-    </ul>
-  </div>
 </div>
 
 <hr/>
